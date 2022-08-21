@@ -1,5 +1,5 @@
 class Answer < ApplicationRecord
-  belongs_to :option
+  belongs_to :question
   
   validates :text, presence: true
 end
