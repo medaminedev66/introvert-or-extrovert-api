@@ -1,7 +1,8 @@
 class Api::V1::AnswersController < ApplicationController
   def create
-    question = Question.all.find_by(id: params[:question_id])
-    answer = question.answers.new(params[:text, :correct])
+    question_id = params[:answer][:question_id]
+    question = Question.find_by(id: question_id)
+    answer = question.answers.new(answer_params)
     if answer.save
       render json: answer, status: :created
     else
@@ -21,5 +22,11 @@ class Api::V1::AnswersController < ApplicationController
 
   def update
 
+  end
+
+  private
+
+  def answer_params
+    params.require(:answer).permit(:text, :correct)
   end
 end
