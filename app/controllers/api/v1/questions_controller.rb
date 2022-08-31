@@ -21,7 +21,17 @@ class Api::V1::QuestionsController < ApplicationController
     question = Question.find(params[:id])
 
     if question.destroy
-      head(:ok)
+      render json: { status: "Success", message: "Deleted Question", data: question}, status: :ok
+    else
+      head(:unprocessable_entity)
+    end
+  end
+
+  def update
+    question = Question.find(params[:id])
+
+    if question.update(question_params)
+      render json: { status: "Success", message: "Updated Question", data: question}, status: :ok
     else
       head(:unprocessable_entity)
     end
