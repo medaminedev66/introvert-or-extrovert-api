@@ -31,8 +31,11 @@ To get a local copy up and running follow these simple example steps.
 - Ruby version: 3.2.1
 - Ruby on Rails version: 7.0.3.1
 ### Setup
+Run the following coammnds in your terminal:
 ```sh
-bundle install
+git clone https://github.com/medaminedev66/introvert-or-extrovert-api.git
+
+cd introvert-or-extrovert-api
 ```
 ### Install
 ```sh
