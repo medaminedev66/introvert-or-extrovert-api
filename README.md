@@ -1,11 +1,13 @@
 # Introvert Or Extrovert API
+![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) ![](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![](https://img.shields.io/badge/RuboCop-000000.svg?style=for-the-badge&logo=RuboCop&logoColor=white)
+
 
 > This API is a simple web API where you make CRUD calls to a server to organize questions and their answers.
 
 <!-- ![screenshot](./app_screenshot.png)
  -->
 ## Front-end Interface
-You can use this API in conjunction with my front-end book club app: see the repo
+You can use this API in conjunction with my front-end introvert or extrovert app: [see the repo](https://github.com/medaminedev66/introvert-or-extrovert-client)
 
 ## Built With
 
@@ -177,6 +179,7 @@ id: 1,
 - Twitter: [@medaminesmahi](https://twitter.com/medaminesmahi)
 - LinkedIn: [Amine Smahi](https://www.linkedin.com/in/md-amine-smahi/)
 
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://smahi.me/)
 
 ## 🤝 Contributing
 
