@@ -21,7 +21,13 @@ class Api::V1::AnswersController < ApplicationController
   end
 
   def update
+    answer = Answer.find(params[:id])
 
+    if question.update(answer_params)
+      render json: { status: "Success", message: "Updated Answer", data: answer}, status: :ok
+    else
+      head(:unprocessable_entity)
+    end
   end
 
   private
