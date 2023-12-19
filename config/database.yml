@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: introvert_or_extrovert_api_production
-  username: introvert_or_extrovert_api
-  password: <%= ENV["INTROVERT_OR_EXTROVERT_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV["MY_APP_DATABASE_URL"] %>

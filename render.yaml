@@ -1,6 +1,6 @@
 databases:
   - name: extrovert-or-introvert
-    databaseName: questions_39wm
+    databaseName: questions
     user: amine
     plan: free
 
@@ -13,9 +13,9 @@ services:
     # preDeployCommand: "./bin/rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "./bin/rails server"
     envVars:
-      - key: postgres://amine:QQLZhkYDP1YAmjvtJnBHaSevUcfUmHrC@dpg-cm0q61en7f5s73cadh9g-a.oregon-postgres.render.com/questions_39wm
+      - key: DATABASE_URL
         fromDatabase:
-          name: questions_39wm
+          name: questions
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
