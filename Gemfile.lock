@@ -172,7 +172,7 @@ DEPENDENCIES
   bootsnap
   debug
   jbuilder
-  pg (~> 1.1)
+  pg
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.3, >= 7.0.3.1)
