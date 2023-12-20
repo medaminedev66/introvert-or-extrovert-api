@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-bundle update -- bundler
+# bundle update -- bundler
 bundle install
 bundle exec rake assets:precompile
 bundle exec rake assets:clean
