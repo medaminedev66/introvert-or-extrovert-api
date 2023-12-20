@@ -7,7 +7,7 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
 # Use postgresql as the database for Active Record
-gem "pg"
+gem "pg", "~> 1.1"
 
 #gems
 gem "jbuilder"
