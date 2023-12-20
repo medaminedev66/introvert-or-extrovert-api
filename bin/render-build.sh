@@ -2,11 +2,9 @@
 # exit on error
 set -o errexit
 
+bundle update -- bundler
 bundle install
-# ./bin/rails assets:precompile
-# ./bin/rails rake assets:clean
-# ./bin/rails  db:migrate
-# ./bin/rails  db:seed
-echo "Running database migrations..."
-bundle exec rails db:migrate
-bundle exec rails db:seed
+bundle exec rake assets:precompile
+bundle exec rake assets:clean
+bundle exec rake db:migrate
+bundle exec rake db:seed
